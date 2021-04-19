@@ -1,5 +1,5 @@
 {
-    "name": "node-ts",
+    "name": "code-challenge-grupo-zap",
     "version": "1.0.0",
     "description": "A node js application with typescrypt modules",
     "main": "app.js",
