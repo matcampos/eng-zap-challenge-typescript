@@ -4,8 +4,8 @@
     "description": "A node js application with typescrypt modules",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec 'rm -R dist && tsc && node dist/app.js'",
-        "build": "rm -R dist && tsc",
+        "start": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec 'tsc && node dist/app.js'",
+        "build": "tsc",
         "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
         "coverage": "nyc --reporter=html -r text -e .ts -x \"tests/*.test.ts\" npm run test"
     },
