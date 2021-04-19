@@ -12,14 +12,15 @@
 
 ### Step 2: Configure environment variables in .env file
 
-* To see how to configure a [.env](https://www.npmjs.com/package/dotenv) file, click [here](https://www.npmjs.com/package/dotenv).
-* The [.env](https://www.npmjs.com/package/dotenv) file, must be a file with the following informations:
+* In the root directory of the project create a file named [.env](https://www.npmjs.com/package/dotenv) with these informations:
 
  `PORT=3000`
 
  `NODE_ENV=development`
 
  `SOURCE_URL=http://grupozap-code-challenge.s3-website-us-east-1.amazonaws.com/sources/source-2.json`
+
+ * To see more informations on how to configure a [.env](https://www.npmjs.com/package/dotenv) file, click [here](https://www.npmjs.com/package/dotenv).
 
  Obs:
 
