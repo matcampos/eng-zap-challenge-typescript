@@ -6,4 +6,5 @@ export class Config {
 
     env: string;
     port: number;
+    source_url: string;
 }

@@ -11,7 +11,7 @@ const envVarsSchema = Joi.object({
         .allow('development', 'production', 'test', 'provision')
         .default('development'),
     PORT: Joi.number()
-        .default(4040),
+        .default(3000),
     SOURCE_URL: Joi.string().optional().default('http://grupozap-code-challenge.s3-website-us-east-1.amazonaws.com/sources/source-2.json')
 }).unknown()
     .required();
@@ -24,6 +24,7 @@ if (error) {
 const config = new Config({
     env: envVars.NODE_ENV,
     port: envVars.PORT,
+    source_url: envVars.SOURCE_URL
 });
 
 export default config;

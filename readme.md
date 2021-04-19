@@ -35,7 +35,7 @@
 
  Obs:
 
- - If you didn't configure the .env file, by default the api will run on PORT 4040, the NODE_ENV environment variable = development and the SOURCE_URL environment variable = http://grupozap-code-challenge.s3-website-us-east-1.amazonaws.com/sources/source-2.json.
+ - If you didn't configure the .env file, by default the api will run on PORT 3000, the NODE_ENV environment variable = development and the SOURCE_URL environment variable = http://grupozap-code-challenge.s3-website-us-east-1.amazonaws.com/sources/source-2.json.
 
 ### Step 3: Start the api:
 

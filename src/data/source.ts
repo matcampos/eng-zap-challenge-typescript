@@ -4,9 +4,9 @@ import axios from 'axios';
 export default class SourceData {
     static data: Array<Immobile> = [];
 
-    async loadData(): Promise<void> {
+    async loadData(url?: string): Promise<void> {
         try {
-            const response = await axios.get<Array<Immobile>>(process.env.SOURCE_URL)
+            const response = await axios.get<Array<Immobile>>(process.env.SOURCE_URL || url)
             SourceData.data = response.data;
         } catch (error) {
             throw error
