@@ -2,6 +2,10 @@ import { Address } from './address'
 import { PricingInfos } from './pricing-infos';
 
 export class Immobile {
+    constructor(init?: Partial<Immobile>) {
+        Object.assign(this, init);
+    }
+
     usableAreas: number;
     listingType: string;
     createdAt: Date;

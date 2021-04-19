@@ -41,10 +41,10 @@ export function filterZapData(data: Array<Immobile>) {
             return false
         }
 
-        // In case of businessType == 'SALE' the price must be upper or equal 600000
+        // In case of businessType == 'SALE' the price must be upper or equal 600000 AND usableAreas price (usableAreas/ priceInfos.price) must be at minimum 3500
         if (data.pricingInfos.businessType == 'SALE') {
 
-            if (elegibleInfos.usableAreaMinPriceValid) {
+            if (!elegibleInfos.usableAreaMinPriceValid) {
                 return false;
             }
 
