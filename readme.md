@@ -43,7 +43,7 @@
 
 ## Build the api
 
-*  If you just want to build the api from ts to js run the following command in terminal `npm run build`
+*  If you just want to build the api from ts to js run the following command in terminal `npm run build`, after the build finishes, a folder called `dist` will be generated, thats are the files witch will be excecuted on a deploy for example.
 
 ### Build with docker
 
@@ -57,6 +57,29 @@
 
 * If you already have docker installed in your machine, just run the following command: `docker-compose up -d`
 * If you don't have docker installed, download docker on the following link: [docker](https://www.docker.com/products/docker-desktop), after the docker's instalation is complete, execute this command: `docker-compose up -d`
+
+ ## Tests
+
+ * To run the tests, run the following command in the root directory of the project: `npm run test`
+ * To get the coverage run the following command: `npm run coverage`, this command will generate a folder called coverage, in this folder there is a file called index.html, open this file in browser to see the code coverage of the project.
+ * In the following image we can see the code coverage of the project opened on browser.
+
+ ![Code Coverage](/documents/code-coverage.png)
+
+ ## Deploy
+
+ * To deploy this application, you must download the project on github in the server that you want to do the deploy, and than you must execute these commands.
+
+ - First, install [NodeJS](https://nodejs.org/en/) in the machine.
+ - Then, open the terminal (CMD) and go to the root directory of the roject and install the dependencies: `npm install`.
+ - Then, execute the build command: `npm run build`.
+ - To run the project, I recommend you to download this library [Pm2](https://www.npmjs.com/package/pm2), to download, in the terminal (CMD) and run this command: `npm install pm2 -g`, Pm2 it's a process manager that will excetute the application in background in your machine, The following link shows more informations about pm2 [link](https://pm2.keymetrics.io/)
+ - After the Pm2 instalation successfully conclusion, in the terminal (CMD) go to the root directory of the project and run the following command: `pm2 start dist/app.js --name code-challenge-grupo-zap`, the parameter --name on the command is the name of the process on pm2, the following images will show to us more clearly the proccess being started.
+
+ ![Pm2 Process Start](/documents/pm2-process-start.png)
+
+ * To see the logs that applications is showing after the process start, run the following command: `pm2 log code-challenge-grupo-zap --lines 100`, this command will show  the last 100 log lines of the application, tou can change the param --lines as you wish.
+
 
 ## Authors
 
