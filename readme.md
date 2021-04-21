@@ -61,7 +61,7 @@
  ## Tests
 
  * To run the tests, run the following command in the terminal (CMD) in the root directory of the project: `npm run test`
- * To get the coverage run the following command in the terminal (CMD): `npm run coverage`, this command will generate a folder called coverage, in this folder there is a file called index.html, open this file in browser to see the code coverage of the project.
+ * To get the coverage run the following command in the terminal (CMD): `npm run coverage`, this command will generate a folder called `coverage`, in this folder there is a file called `index.html`, open this file in browser to see the code coverage of the project.
  * In the following image we can see the code coverage of the project opened on browser.
 
  ![Code Coverage](/documents/code-coverage.png)
