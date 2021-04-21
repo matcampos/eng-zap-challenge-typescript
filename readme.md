@@ -61,25 +61,41 @@
  ## Tests
 
  * To run the tests, run the following command in the terminal (CMD) in the root directory of the project: `npm run test`
- * To get the coverage run the following command in the terminal (CMD): `npm run coverage`, this command will generate a folder called `coverage`, in this folder there is a file called `index.html`, open this file in browser to see the code coverage of the project.
+
+ * To get the coverage run the following command in the terminal (CMD): `npm run coverage` , this command will generate a folder called `coverage` , in this folder there is a file called `index.html` , open this file in browser to see the code coverage of the project.
  * In the following image we can see the code coverage of the project opened on browser.
 
- ![Code Coverage](/documents/code-coverage.png)
+ 
+
+![Code Coverage](/documents/code-coverage.png)
 
  ## Deploy
 
  * To deploy this application, you must download the project from github in the server that you want to do the deploy, and then you must execute these steps:
 
+### Deploy with pm2
+
  - First, install [NodeJS](https://nodejs.org/en/) in the machine.
- - Then, open the terminal (CMD) and go to the root directory of the roject and install the dependencies: `npm install`.
- - Then, execute the build command: `npm run build`.
- - To run the project, I recommend you to download this library [Pm2](https://www.npmjs.com/package/pm2), to download open the terminal (CMD) and run this command: `npm install pm2 -g`, Pm2 it's a process manager that will execute the application in background in your machine, The following link shows more informations about pm2 [link](https://pm2.keymetrics.io/)
- - After the Pm2 instalation successfully conclusion, in the terminal (CMD) go to the root directory of the project and run the following command: `pm2 start dist/app.js --name code-challenge-grupo-zap`, the parameter --name on the command is the name of the process on pm2, the following images will show to us more clearly the proccess being started.
+ - Then, open the terminal (CMD) and go to the root directory of the roject and install the dependencies: `npm install` .
+ - Then, execute the build command: `npm run build` .
+ - To run the project, I recommend you to download this library [Pm2](https://www.npmjs.com/package/pm2), to download open the terminal (CMD) and run this command: `npm install pm2 -g` , Pm2 it's a process manager that will execute the application in background in your machine, The following link shows more informations about pm2 [link](https://pm2.keymetrics.io/)
+ - After the Pm2 instalation successfully conclusion, in the terminal (CMD) go to the root directory of the project and run the following command: `pm2 start dist/app.js --name code-challenge-grupo-zap` , the parameter --name on the command is the name of the process on pm2, the following images will show to us more clearly the proccess being started.
 
- ![Pm2 Process Start](/documents/pm2-process-start.png)
+ 
 
- * To see the logs that applications is showing after the process start, run the following command: `pm2 log code-challenge-grupo-zap --lines 100`, this command will show the last 100 log lines of the application, you can change the param --lines as you wish.
+![Pm2 Process Start](/documents/pm2-process-start.png)
 
+ * To see the logs that applications is showing after the process start, run the following command: `pm2 log code-challenge-grupo-zap --lines 100` , this command will show the last 100 log lines of the application, you can change the param --lines as you wish.
+
+### Deploy with docker
+
+* First you need to have docker installed in your server machine, to download docker follow the instructions in this [link](https://www.docker.com/products/docker-desktop) to instal docker in your machine.
+* Then, download the github project in your server.
+* Then, run the following code in your server,  `docker-compose up -d`, after it the api it will be available and working in a few seconds.
+
+## Postman documentation.
+
+* The postman documentation is available in this [link](https://documenter.getpostman.com/view/2807152/TzJvdwSc#cddea092-6022-4018-ae6e-d98ca3908489), you can download the postman collection there and do the requests on the api after you have configured your environment.
 
 ## Authors
 
