@@ -95,7 +95,12 @@
 
 ## Postman documentation.
 
-* The postman documentation is available in this [link](https://documenter.getpostman.com/view/2807152/TzJvdwSc#cddea092-6022-4018-ae6e-d98ca3908489), you can download the postman collection there and do the requests on the api after you have configured your environment.
+* The postman documentation is available in this [link](https://documenter.getpostman.com/view/2807152/TzJvdwSc), you can download the postman collection there and do the requests on the api.
+
+
+## Published environment
+
+* The application is published in this url: https://mighty-fjord-97986.herokuapp.com/, the informations of the api routs it's in the postman collection.
 
 ## Authors
 
