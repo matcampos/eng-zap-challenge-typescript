@@ -100,7 +100,7 @@
 
 ## Published environment
 
-* The application is published in this url: https://mighty-fjord-97986.herokuapp.com/, the informations of the api routs it's in the postman collection.
+* The application is published in this url: https://mighty-fjord-97986.herokuapp.com/, the informations of the api routes it's in the postman collection.
 
 ## Authors
 
