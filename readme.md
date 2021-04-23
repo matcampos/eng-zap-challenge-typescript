@@ -96,6 +96,7 @@
 ## Postman documentation.
 
 * The postman documentation is available in this [link](https://documenter.getpostman.com/view/2807152/TzJvdwSc), you can download the postman collection there and do the requests on the api.
+* You can import the postman collection and environment variables file getting them in `postman` folder located od the root directory of this repository.
 
 
 ## Published environment

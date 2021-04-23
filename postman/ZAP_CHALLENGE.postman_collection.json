@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "4d28ff6d-d1e2-4ba3-b587-f9f255e7bb7a",
+		"name": "ZAP_CHALLENGE",
+		"description": "The zap group properties api.\n\nDefault development endpoint: http://localhost:3000\n\nPublished environment endpoint: https://mighty-fjord-97986.herokuapp.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "properties",
+			"item": [
+				{
+					"name": "Get api properties paginated",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/api/properties?platform={{platform}}&page={{page}}&pageSize={{pageSize}}",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"properties"
+							],
+							"query": [
+								{
+									"key": "platform",
+									"value": "{{platform}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								},
+								{
+									"key": "pageSize",
+									"value": "{{pageSize}}"
+								}
+							]
+						},
+						"description": "Get api properties paginated endpoint, in this endpoint you can get the properties paginated and filter by platform, ZAP or VIVA_REAL.\n\n# Request\n## Headers\n|Field|Description|Format|Required|\n|-----|-----------|------|--------|\n|Accept-Language|The languages that the client prefers the response|[IETF Reference](https://tools.ietf.org/html/rfc2616#section-14.4)|x|\n\n## Query\n|Field|Description|Type|Required|\n|---|---|---|---|\n|platform|The platform that you want to filter ZAP or VIVA_REAL|string|x|\n|page|The actual page|number|x|\n|pageSize|The number of the documents that you want to get paginated max(30)|number|x|\n\n# Response\n## Headers\n|Field|Description|Type|Required|\n|---|---|---|---|\n|Content-Language|The language that the API is serving the data. [IETF Reference](https://tools.ietf.org/html/rfc3282)|string|x|\n\n## Body\n|Field|Description|Type|Required|\n|---|---|---|---|\n|pageNumber|Number of the actual page|number|√|\n|pageSize|Number of objects that will be returned on the pagination max(30)|number|√|\n|totalCount|The count of the document that were found|number|√|\n|listings|An array of objects <Immobile>.|Array<Immobile>|√|"
+					},
+					"response": []
+				}
+			],
+			"description": "Properties endpoints."
+		}
+	]
+}
