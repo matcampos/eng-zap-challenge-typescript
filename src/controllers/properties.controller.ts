@@ -4,7 +4,7 @@ import { propertiesService } from '../services'
 
 async function findProperties(req: Request, res: Response, next: NextFunction) {
     try {
-        let query = new SearchQuery({
+        const query = new SearchQuery({
             page: Number(req.query.page),
             pageSize: Number(req.query.pageSize),
             offset: Number(req.query.offset),
